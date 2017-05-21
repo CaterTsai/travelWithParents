@@ -1,0 +1,150 @@
+p.speechDown
+{
+   position: absolute;
+   text-align: center;
+   line-height: 2.5vh;
+   width: 5%;
+   height: 2.5vh;
+   padding: 0px;
+   background: #FFFFFF;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   border: #015FBF solid 2px;
+
+   transition: all .2s ease-in-out;
+   transform-origin: 50% -50%;
+}
+
+p.speechDown:before 
+{
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 0 6px 25px;
+   border-color: #015FBF transparent;
+   display: block;
+   width: 0;
+   z-index: 0;
+   margin-left: -6px;
+   top: -25px;
+   left: 50%;
+
+   transition: all .2s ease-in-out;
+}
+
+
+/*--------------------------------------------*/
+p.speechUp
+{
+   position: absolute;
+   text-align: center;
+   line-height: 2.5vh;
+   width: 5%;
+   height: 2.5vh;
+   padding: 0px;
+   background: #FFFFFF;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   border: #015FBF solid 2px;
+
+   transition: all .2s ease-in-out;
+   transform-origin: 50% 150%;
+}
+
+p.speechUp:before 
+{
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 25px 6px 0;
+   border-color: #015FBF transparent;
+   display: block;
+   width: 0;
+   z-index: 0;
+   margin-left: -6px;
+   bottom: -25px;
+   left: 50%;
+
+   transition: all .2s ease-in-out;
+}
+
+p.speechHover
+{
+   transform: scale(1.2);
+   border: red solid 2px;
+}
+
+p.speechHover:before
+{
+   border-color: red transparent;
+}
+
+
+/*=======================================*/
+/*Position*/
+p.us
+{
+   top:35%;
+   left:15%;
+}
+
+p.eu
+{
+   top:30%;
+   left:50%;
+}
+
+p.cn
+{
+   top:40%;
+   left:73%;
+}
+
+p.jp
+{
+   top:35%;
+   left:85%;
+}
+
+p.kr
+{
+   top:40%;
+   left:80.5%;
+}
+
+p.th
+{
+   top:50%;
+   left:73%;
+}
+
+p.my
+{
+   top:55%;
+   left:72.5%;
+}
+p.hk
+{
+   top:46.5%;
+   left:77%;
+}
+
+p.id
+{
+   top:58%;
+   left:78.5%;
+}
+
+p.sg
+{
+   top:64.5%;
+   left:73.5%;
+}
+
+p.au
+{
+   top:70%;
+   left:82%;
+}

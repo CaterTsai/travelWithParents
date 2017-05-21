@@ -1,0 +1,91 @@
+div.photoDisplay
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:6vw;
+	height:6vw;
+	border-radius:8%;
+	background-color: rgba(128, 128, 128, 0.8);
+	z-index: 30;
+}
+
+
+/*-------------------------*/
+img.fbPhotoL
+{
+	position:absolute;
+	width:30%;
+	height:auto;
+	border-radius:50%;
+}
+
+img.fbPhotoM
+{
+	position:absolute;
+	width:20%;
+	height:auto;
+	border-radius:50%;
+}
+
+img.fbPhotoS
+{
+	position:absolute;
+	width:15%;
+	height:auto;
+	border-radius:50%;
+}
+
+img.pos1
+{
+	top:35%;
+	left:35%;
+}
+
+img.pos2
+{
+	top:7%;
+	left:7%;
+}
+
+img.pos3
+{
+	top:54%;
+	left:8%;
+}
+
+img.pos4
+{
+	top:70%;
+	left:57%;
+}
+
+img.pos5
+{
+	top:7%;
+	left:68%;
+}
+
+img.pos6
+{
+	top:67%;
+	left:80%;
+}
+
+img.pos7
+{
+	top:45%;
+	left:73%;
+}
+
+img.pos8
+{
+	top:80%;
+	left:27%;
+}
+
+img.pos9
+{
+	top:16%;
+	left:47%;
+}

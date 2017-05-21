@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>china-airlines</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0">  
+	<link rel="stylesheet" type="text/css" href="css/mark.css">
+	<link rel="stylesheet" type="text/css" href="css/photo.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<!-- <script type="text/javascript" src = "js/fb.js"></script> -->
+	<div id = "menu" class = "menu">
+		menu
+	</div>
+	
+	<div class = "content">
+		<div id = "topVideo" class = "fullWrapper topVideo">
+			<button id = "btnVideoNext" class = "btnVideo btnZindex" onclick = "onVideoBtn()" value="">即 刻 啟 程</button>
+			<div id="videoPlay">
+				<video class = "fullVideo" preload loop>
+					<source src="http://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4" type="video/mp4"/>
+				</video>
+				<div class = "videoCover"></div>
+
+			</div>
+		</div>
+
+		<div id = "map" class = "fullWrapper map">
+			<img class = "fullImage" src="assets/map.jpg"/>
+			<div id = "countrySelect">
+				<p id = "markUS" class = "us speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">美國 0000人</p>
+				<p id = "markEU" class = "eu speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">歐洲</p>
+				<p id = "markCN" class = "cn speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">大陸</p>
+				<p id = "markJP" class = "jp speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">日本</p>
+				<p id = "markKR" class = "kr speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">韓國</p>
+				<p id = "markTH" class = "th speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">泰國</p>
+				<p id = "markMY" class = "my speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">馬來西亞</p>
+				<p id = "markHK" class = "hk speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">香港</p>
+				<p id = "markID" class = "id speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">印尼</p>
+				<p id = "markSG" class = "sg speechDown btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">新加坡</p>
+				<p id = "markAU" class = "au speechUp btnZindex" onclick = "onCountryBtn(this)" onmouseover = "onCountryMouseover(this)" onmouseout="onCountryMouseout(this)">澳洲</p>
+				<div id = "photoDisplay" class = "photoDisplay">
+					<img class = "fbPhotoL pos1" src="assets/photo.jpg"/>
+					<img class = "fbPhotoL pos2" src="assets/photo.jpg"/>
+					<img class = "fbPhotoM pos3" src="assets/photo.jpg"/>
+					<img class = "fbPhotoM pos4" src="assets/photo.jpg"/>
+					<img class = "fbPhotoM pos5" src="assets/photo.jpg"/>
+					<img class = "fbPhotoS pos6" src="assets/photo.jpg"/>
+					<img class = "fbPhotoS pos7" src="assets/photo.jpg"/>
+					<img class = "fbPhotoS pos8" src="assets/photo.jpg"/>
+					<img class = "fbPhotoS pos9" src="assets/photo.jpg"/>
+				</div>
+			</div>
+			<button id = "btnMapNext" class = "btnMap btnZindex" onclick = "onMapBtn()">即 刻 啟 程</button>
+		</div>
+
+		<div id = "userData" class = "fullWrapper userData">
+			<input type="text" class = "userInput inputZindex namePos" maxlength="10" id = "userName" placeholder="您的真實姓名"/>
+			<input type="text" class = "userInput inputZindex namePhone" maxlength="10" id = "userPhone" placeholder="您的手機號碼"/>
+			<input type="text" class = "userInput inputZindex confirmPhone" maxlength="10" id = "userPhoneCheck" placeholder="再次確認手機"/>
+			<div class = "userDataContent">
+				<input type="checkbox"/>
+				我已閱讀<a href="">同意活動辦法</a>和<a href="">「個人資料告知事項」</a>
+			</div>
+			<button id = "btnUserDataNext" class = "btnUserData btnZindex" onclick = "onUserDataBtn()">即 刻 啟 程</button>
+		</div>
+
+		<div id = "info" class = "fullWrapper info">
+			info
+		</div>
+	</div>
+
+	<script type="text/javascript" src = "js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src = "js/client.min.js"></script>
+	<script type="text/javascript" src = "js/main.js"></script>
+</body>
+</html>
