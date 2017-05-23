@@ -1,0 +1,272 @@
+
+.btnMap
+{
+   top:80%;
+   left:47%;
+   width:6%;
+   height:5vh;
+   color:white;
+   font-size:1vw;
+   text-align: center;
+   background-color: rgb(70, 89, 167);
+   border:none;
+}
+
+img.mapTitle
+{
+   top:7%;
+   left:42%;
+   width:16%;
+   height:auto;
+}
+
+/*-------------------------*/
+/*Mark*/
+/*-------------------------*/
+p.speechDown
+{
+   position: absolute;
+   text-align: center;
+   line-height: 2.5vh;
+   font-size:1vh;
+   width: 5%;
+   height: 2.5vh;
+   padding: 0px;
+   background: #FFFFFF;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   border: #015FBF solid 2px;
+
+   transition: all .2s ease-in-out;
+   transform-origin: 50% -50%;
+}
+
+p.speechDown:before 
+{
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 0 6px 25px;
+   border-color: #015FBF transparent;
+   display: block;
+   width: 0;
+   z-index: 0;
+   margin-left: -6px;
+   top: -25px;
+   left: 50%;
+
+   transition: all .2s ease-in-out;
+}
+
+
+/*--------------------------------------------*/
+p.speechUp
+{
+   position: absolute;
+   text-align: center;
+   line-height: 2.5vh;
+   font-size:1vh;
+   width: 5%;
+   height: 2.5vh;
+   padding: 0px;
+   background: #FFFFFF;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   border: #015FBF solid 2px;
+
+   transition: all .2s ease-in-out;
+   transform-origin: 50% 150%;
+}
+
+p.speechUp:before 
+{
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 20px 5px 0;
+   border-color: #015FBF transparent;
+   display: block;
+   width: 0;
+   z-index: 0;
+   margin-left: -5px;
+   bottom: -20px;
+   left: 50%;
+
+   transition: all .2s ease-in-out;
+}
+
+p.speechHover
+{
+   transform: scale(1.2);
+   border: red solid 2px;
+}
+
+p.speechHover:before
+{
+   border-color: red transparent;
+}
+
+
+/*=======================================*/
+/*Position*/
+p.us
+{
+   top:28%;
+   left:20%;
+}
+
+p.eu
+{
+   top:22%;
+   left:46%;
+}
+
+p.cn
+{
+   top:33%;
+   left:66%;
+}
+
+p.jp
+{
+   top:27%;
+   left:76%;
+}
+
+p.kr
+{
+   top:31%;
+   left:72.5%;
+}
+
+p.th
+{
+   top:42%;
+   left:66%;
+}
+
+p.my
+{
+   top:47%;
+   left:66.5%;
+}
+p.hk
+{
+   top:38.5%;
+   left:69.5%;
+}
+
+p.id
+{
+   top:52%;
+   left:71%;
+}
+
+p.sg
+{
+   top:56.5%;
+   left:67%;
+}
+
+p.au
+{
+   top:65%;
+   left:75%;
+}
+
+/*-------------------------*/
+/*Photo*/
+/*-------------------------*/
+div.photoDisplay
+{
+   position:absolute;
+   top:50%;
+   left:50%;
+   width:6vw;
+   height:6vw;
+   border-radius:8%;
+   background-color: rgba(59, 87, 157, 0.2);
+   z-index: 30;
+}
+
+
+/*-------------------------*/
+img.fbPhotoL
+{
+   position:absolute;
+   width:30%;
+   height:auto;
+   border-radius:50%;
+}
+
+img.fbPhotoM
+{
+   position:absolute;
+   width:20%;
+   height:auto;
+   border-radius:50%;
+}
+
+img.fbPhotoS
+{
+   position:absolute;
+   width:15%;
+   height:auto;
+   border-radius:50%;
+}
+
+img.pos1
+{
+   top:35%;
+   left:35%;
+}
+
+img.pos2
+{
+   top:7%;
+   left:7%;
+}
+
+img.pos3
+{
+   top:54%;
+   left:8%;
+}
+
+img.pos4
+{
+   top:70%;
+   left:57%;
+}
+
+img.pos5
+{
+   top:7%;
+   left:68%;
+}
+
+img.pos6
+{
+   top:67%;
+   left:80%;
+}
+
+img.pos7
+{
+   top:45%;
+   left:73%;
+}
+
+img.pos8
+{
+   top:80%;
+   left:27%;
+}
+
+img.pos9
+{
+   top:16%;
+   left:47%;
+}

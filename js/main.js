@@ -1,21 +1,47 @@
-var _countryIDSelect = -1;
+
 
 /*========================================
 Video Page
 =========================================*/
+var _audioOn = true;
+
+//----------------------------------------
+function resetVideoPage()
+{
+	_audioOn = true;
+}
 
 //----------------------------------------
 function onVideoBtn()
 {
 	$("#topVideo").fadeOut(1000);
-
+	$("#videoPlay")[0].pause();
 	resetCountryPage();
 	$("#map").show();
+}
+
+//----------------------------------------
+function onAudioBtn()
+{
+	_audioOn = !_audioOn;
+	if(_audioOn)
+	{
+		$("#btnAudio").attr('src', 'assets/audioOn.png');
+		$("#videoPlay").prop("muted", false);
+	}
+	else
+	{
+		$("#btnAudio").attr('src', 'assets/audioOff.png');
+		$("#videoPlay").prop("muted", true);
+	}
 }
 
 /*========================================
 Country Page
 =========================================*/
+var _countryIDSelect = -1;
+
+//----------------------------------------
 function resetCountryPage()
 {
 	_countryIDSelect = -1;
@@ -62,26 +88,91 @@ function onMapBtn()
 {
 	$("#map").fadeOut(1000);
 	$("#userData").show();
+	resetUserDataPage();
 }
 
 /*========================================
 User Data
 =========================================*/
+var _checkClick;
+function resetUserDataPage()
+{
+	$("#btnUserDataNext").attr("disabled", true);
+	$("#userName").val("");
+	$("#userPhone").val("");
+	$("#userPhoneCheck").val("");
+	_checkClick = false;
+}
 //----------------------------------------
 function onUserDataBtn()
 {
 	$("#userData").fadeOut(1000);
 	$("#info").show();
 }
+
+
+//----------------------------------------
+function onPhone(phone)
+{
+	var phone = document.getElementById(phone.id);
+	var check = document.getElementById("userPhoneCheck");
+	if(phone.checkValidity())
+	{		
+		check.pattern = phone.value;
+	}
+	else
+	{
+		check.pattern = "";
+	}
+	dataCheck();
+}
+
+//----------------------------------------
+function onConfirmCheck(confirm)
+{
+	// if($("#userPhone").val() != $("#" + confirm.id).val())
+	// {
+		
+	// }
+	// else
+	// {
+	// 	_phoneCheck = false;
+	// }
+	dataCheck();
+}
+
+//----------------------------------------
+function troggleUserDatabox(checkbox)
+{
+	_checkClick = checkbox.checked;
+	dataCheck();
+}
+
+//----------------------------------------
+function dataCheck()
+{
+	if(_checkClick && $("#userPhone")[0].checkValidity() && $("#userPhoneCheck")[0].checkValidity())
+	{
+		$("#btnUserDataNext").attr("disabled", false);
+	}
+	else
+	{
+		$("#btnUserDataNext").attr("disabled", true);
+	}
+}
 /*========================================
 Global 
 =========================================*/
 function init()
 {	
-	$("#topVideo").hide();
+	//$("#topVideo").hide();
 	$("#map").hide();
-	//$("#userData").hide();
+	$("#userData").hide();
 	$("#info").hide();
+
+	resetVideoPage();
+	resetCountryPage();
+	resetUserDataPage();
 }
 
 //----------------------------------------

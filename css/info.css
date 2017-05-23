@@ -1,0 +1,38 @@
+div.videoContainer
+{
+	position: absolute;
+	width:60%;
+	height:100%;
+	top:0;
+	left:0;
+	display:block;
+	overflow: hidden;
+}
+
+div.imageContainer
+{
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	top:0;
+	left:60%;
+	display:block;
+	overflow: hidden;	
+}
+
+video.infoVideo
+{
+	margin-left: -30%
+}
+
+img.infoImgTop
+{
+	top:0;
+	height:50%;
+}
+
+img.infoImgDown
+{
+	top:50%;
+	height:50%;
+}
