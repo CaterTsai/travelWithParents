@@ -1,0 +1,47 @@
+div.videoContiner
+{
+	position: absolute;
+	width:100%;
+	height:45%;
+	top:0;
+	left:0;
+	display:block;
+	overflow: hidden;
+
+	text-align: center;
+
+}
+
+
+video.topVideo
+{
+	position: absolute;
+	left: 50%;
+	top: 0;
+
+	min-width: 100%;
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+button.btnTop
+{
+	top:85%;
+	left:37%;
+	width:26%;
+	height:5vh;
+	color:rgb(62, 91, 199);
+	font-size:4vw;
+	text-align: center;
+	background-color: transparent;
+	border:rgb(62, 91, 199) solid 2px;
+}
+
+img.topTitle
+{
+	top:70%;
+	left:20%;
+	width:60%;
+	height:auto;
+}

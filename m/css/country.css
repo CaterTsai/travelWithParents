@@ -1,0 +1,53 @@
+img.countryTitle{
+	top:15%;
+	left:10%;
+	width:80%;
+	height:auto;
+}
+
+button.btnCountry
+{
+	top:70%;
+	left:37%;
+	width:30%;
+	height:4vh;
+	color:white;
+	font-size:4vw;
+	text-align: center;
+	background-color: rgb(70, 89, 167);
+	border:none;
+}
+
+select.countrySelect
+{
+	-webkit-appearance: none;
+	top:20%;
+	left:11%;
+	width:78%;
+	font-size:2.5vh;
+	text-align: center;
+	min-height:30%;
+}
+
+select.countrySelect option
+{
+	-webkit-appearance: none;
+	padding:1.5vh 0;
+}
+
+ul.multilineselect
+{
+	position:absolute;
+	z-index: 14; 
+	top:20%;
+	left:11%;
+	width:78%;
+	font-size:2.5vh;
+	text-align: center;
+	min-height:35%;
+}
+
+ul.multilineselect li
+{
+	padding:0.8vh 0;
+}

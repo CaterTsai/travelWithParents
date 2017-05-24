@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>china-airlines</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/m.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/top.css">
+	<link rel="stylesheet" type="text/css" href="css/country.css">
+	<link rel="stylesheet" type="text/css" href="css/userData.css">
+	<link rel="stylesheet" type="text/css" href="css/info.css">
+
+</head>
+<body>
+	<!-- Menu Bar -->
+	<nav class="nav navbar-default navbar-fixed-top">
+	    <div class="container-fluid">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span> 
+	            </button>
+	            <a class="navbar-brand" href="#"><img class = "logo" src="assets/logo.png"/></a>
+
+	        </div>
+	        <div class="collapse navbar-collapse" id="myNavbar">
+	            <ul class="nav navbar-nav navbar-right">
+	                <li><a id = "menuStart" data-toggle="tab" href="#" onclick="">即刻啟程</a></li>
+	                <li><a id = "menuTerms" data-toggle="tab" href="#">活動辦法</a></li>
+	                <li><a data-toggle="tab" href="#">華航官方粉絲團</a></li>
+	                <li><a data-toggle="tab" href="#">華航官方帳號</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav> 
+
+	<!-- Content -->
+	<div class="content">
+		<div id = "top" class = "fullWrapper top noScroll">
+			<img class = "fullImage" src = "assets/topBG.jpg">
+			<div class = "videoContiner">
+				<video id = "videoPlay" class = "topVideo" preload loop>
+					<source src="http://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4" type="video/mp4"/>
+				</video>
+			</div>
+			
+			<img class = "imgZindex topTitle" src = "assets/topTitle.png"/>
+			<button id = "btnTopNext" class = "btnTop btnZindex" onclick = "onTopBtn()">即 刻 啟 程</button>
+		</div>
+
+		<div id = "country" class = "fullWrapper country noScroll">
+			<img class = "imgZindex countryTitle" src = "assets/countryTitle.png"/>
+			<select id = "countrySelect" class = "selectZindex countrySelect" size = "7" >
+				<option value="0" selected>美國 (已有0000人選)
+				<option value="1" selected>歐洲 (已有0000人選)
+				<option value="2" selected>大陸 (已有0000人選)
+				<option value="3" selected>日本 (已有0000人選)
+				<option value="4" selected>韓國 (已有0000人選)
+				<option value="5" selected>泰國 (已有0000人選)
+				<option value="6" selected>馬來西亞 (已有0000人選)
+				<option value="7" selected>香港 (已有0000人選)
+				<option value="8" selected>印尼 (已有0000人選)
+				<option value="9" selected>新加坡 (已有0000人選)
+				<option value="10" selected>澳洲 (已有0000人選)
+			</select>
+
+			<button id = "btnCountryNext" class = "btnCountry btnZindex" onclick = "onCountryBtn()">即 刻 啟 程</button>
+		</div>
+
+		<div id = "userData" class = "fullWrapper userData noScroll">
+			<img class = "imgZindex userDataTitle" src = "assets/userDataTitle.png"/>
+			<input type="text" required pattern = "\w+|\W+" class = "userInput inputZindex namePos" maxlength="10" id = "userName" placeholder = "您的真實姓名" onchange = "dataCheck()">
+			<input type="text" required pattern = "^[0-9]{10}" class = "userInput inputZindex namePhone" maxlength="10" id = "userPhone" placeholder="您的手機號碼" onchange = "onPhone(this)" required/>
+			<input type="text" required class = "userInput inputZindex confirmPhone" maxlength="10" id = "userPhoneCheck" placeholder="再次確認手機" onchange="dataCheck()"/>
+
+			<div class = "userDataContent">
+				<input id = "userDataCheck" type="checkbox" onchange = "troggleUserDatabox(this)"/>
+				我已閱讀<a href="">同意活動辦法</a>和<a href="">「個人資料告知事項」</a>
+			</div>
+			<button id = "btnUserDataNext" class = "btnUserData btnZindex" onclick = "onUserDataBtn()" >即 刻 啟 程</button>
+		</div>
+
+		<div id = "info" class = "fullWrapper info">
+			<div class = "infoVideoContiner">
+				<video class = "fullVideo infoVideo" poster="assets/videoPoster.jpg" preload loop>
+					<source src="http://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4" type="video/mp4"/>
+				</video>
+			</div>
+			<div class = "infoContiner">
+				<img src="assets/infoTop.jpg" class = "fullWidthImage"/>
+				<img src="assets/infoDown.jpg" class = "fullWidthImage"/>
+				<img src="assets/banner.jpg" class = "fullWidthImage"/>
+				<div class="tintup" data-id="chinaairline" data-columns="" data-expand="true"  data-infinitescroll="true" data-personalization-id="861885" style="height:500px;width:100%;"></div>
+			</div>
+
+			
+		</div>
+	</div>
+</body>
+
+
+	<!-- Script -->
+	<script async src="https://d36hc0p18k1aoc.cloudfront.net/pages/a5b5e5.js"></script>
+	<script type="text/javascript" src = "js/jquery-1.12.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src = "js/safarimobile-multiline-select.js"></script>
+	<script type="text/javascript" src = "js/client.min.js"></script>
+	<script type="text/javascript" src = "js/m.js"></script>
+</body>
+
+</html>

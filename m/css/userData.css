@@ -1,0 +1,82 @@
+button.btnUserData
+{
+	top:70%;
+	left:35%;
+	width:30%;
+	height:4vh;
+	color:white;
+	font-size:4vw;
+	text-align: center;
+	background-color: rgb(70, 89, 167);
+	border:none;
+}
+
+button.btnUserData:disabled
+{
+	background-color: rgb(144, 158, 214);
+}
+
+img.userDataTitle
+{
+	top:15%;
+	left:10%;
+	width:80%;
+	height:auto;
+}
+
+/*-------------------------*/
+input.userInput
+{
+	width:60%;
+	height:4vh;
+	font-size:2.0vh;
+	letter-spacing: 0.2vw;
+	text-align: center;
+	background-color: #efefef;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: solid 0px;
+	
+}
+
+input.namePos
+{
+	top:28%;
+	left:20%;
+}
+
+input.namePhone
+{
+	top:35%;
+	left:20%;
+}
+
+input.confirmPhone
+{
+	top:42%;
+	left:20%;
+}
+
+input[type="checkbox"]{
+	width:2.0vh;
+	height:2.0vh;
+}
+
+div.userDataContent
+{
+	position:absolute;
+	top:55%;
+	width:100%;
+	text-align: center;
+	z-index:20;
+	font-size: 2.0vh;
+}
+
+input:focus:invalid {
+	background-image: url("../assets/x.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+	-moz-box-shadow: none;
+}

@@ -92,7 +92,7 @@ function onMapBtn()
 }
 
 /*========================================
-User Data
+User Data Page
 =========================================*/
 var _checkClick;
 function resetUserDataPage()
@@ -151,7 +151,7 @@ function troggleUserDatabox(checkbox)
 //----------------------------------------
 function dataCheck()
 {
-	if(_checkClick && $("#userPhone")[0].checkValidity() && $("#userPhoneCheck")[0].checkValidity())
+	if(_checkClick && $("#userName")[0].checkValidity() && $("#userPhone")[0].checkValidity() && $("#userPhoneCheck")[0].checkValidity())
 	{
 		$("#btnUserDataNext").attr("disabled", false);
 	}
@@ -182,7 +182,7 @@ window.onload
 	var client = new ClientJS();
 	if(client.isMobile())
 	{
-		window.location = "m.html";
+		window.location = "m/index.html";
 	}
 	init();
 

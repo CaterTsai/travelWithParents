@@ -65,9 +65,9 @@
 
 		<div id = "userData" class = "fullWrapper userData noSroll">
 			<img class = "imgZindex userDataTitle" src="assets/userDataTitle.png"/>
-			<input type="text" required pattern = "\w+|\W+" class = "userInput inputZindex namePos" maxlength="10" id = "userName" placeholder = "您的真實姓名" onchange = "onUserNameChange(this)">
+			<input type="text" required pattern = "\w+|\W+" class = "userInput inputZindex namePos" maxlength="10" id = "userName" placeholder = "您的真實姓名" onchange = "dataCheck()">
 			<input type="text" required pattern = "^[0-9]{10}" class = "userInput inputZindex namePhone" maxlength="10" id = "userPhone" placeholder="您的手機號碼" onchange = "onPhone(this)" required/>
-			<input type="text" required class = "userInput inputZindex confirmPhone" maxlength="10" id = "userPhoneCheck" placeholder="再次確認手機" onchange="onConfirmCheck(this)"/>
+			<input type="text" required class = "userInput inputZindex confirmPhone" maxlength="10" id = "userPhoneCheck" placeholder="再次確認手機" onchange="dataCheck()"/>
 			
 			<div class = "userDataContent">
 				<input id = "userDataCheck" type="checkbox" onchange = "troggleUserDatabox(this)"/>
